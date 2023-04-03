@@ -1,0 +1,29 @@
+#include<stdio.h>
+struct booklist
+{
+    char members_title[50];
+    char author[50];
+    float cost;
+};
+int main()
+{
+  struct booklist s[4];
+  int i;
+  float  total_cost=0;
+  printf("enter members title, Book name, Cost: \n");
+  for(i=0; i<4; i++)
+  {
+      printf("enter the member title:");
+      scanf("%s",&s[i].members_title);
+      printf("enter the  author:");
+      scanf("%s",&s[i].author);
+      printf("enter the cost:\n");
+      scanf("%f",&s[i].cost);
+  }
+  for(i=0; i<4; i++)
+  {
+    total_cost=total_cost+s[i].cost;
+  }
+  printf("the total cost is %f",total_cost);
+  return 0;
+}
