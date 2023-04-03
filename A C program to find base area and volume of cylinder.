@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+   int radius;
+   int height;
+   float pi=3.14;
+   printf("the radius of circle is \n");
+   scanf("%d",&radius);
+   printf("the area of base of cylinder is %f \n",pi*radius*radius);
+   printf("the height of cylinder is \n");
+   scanf("%d",&height);
+   printf("the volume of cylinder is %f",pi*radius*radius*height);
+   return 0;
+}
