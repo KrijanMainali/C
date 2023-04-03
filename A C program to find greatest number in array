@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    int arr[50];
+    int i;
+    int c;
+    printf("enter the number of integers you want to compare : \n");
+    scanf("%d",&n);
+    printf("enter the integers: \n");
+    for(i=0 ; i<n;i++)
+    {
+        printf("enter integer %d :",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(i=0; i<n ;i++)
+    {
+        for(i=0; i<n ; i++)
+        {
+        if(arr[i]<arr[i+1])
+        {
+            c=arr[i+1];
+        }
+        }
+    }
+    printf("the greatest number in array is %d",c);
+    return 0;
+}
