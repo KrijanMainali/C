@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int euclidean_gcd(int a , int b){
+    if (b == 0){
+    return a;
+    }
+    else{
+    return euclidean_gcd(b, a % b);
+    }
+}
+
+int main()
+{
+    int x,y;
+    cout<<"enter the first number \n";
+    cin>>x;
+    cout<<"enter the second number \n";
+    cin>>y;
+    int gcd = euclidean_gcd(x,y);
+    cout<<"the gcd of two number is :"<<gcd;
+    return 0; 
+}
